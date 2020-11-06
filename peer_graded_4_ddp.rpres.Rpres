@@ -1,0 +1,46 @@
+mpg prediction for your car
+========================================================
+author: Shruti S P
+date: 6th November 2020
+autosize: true
+
+Overview
+========================================================
+
+As I was asked to create a Shiny app, I went completely wild and came up with a code that might not do much, but is fun to use. Perhaps you think it's a joke. But eh, who cares? Let's get right into it!
+
+
+Functionality
+========================================================
+
+So what you gotta do is just enter values. It's gonna throw out some random value which makes no sense at all. Honestly, it's not even supposed to
+
+
+Slide With Code
+========================================================
+
+```{r}
+summary(mtcars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+library(ggplot2)
+plot <- ggplot(data=mtcars, aes(x=hp, y = mpg))+
+            geom_point(aes(color = as.factor(cyl)), alpha = 0.8)
+        plot
+```
+
+Shiny application and files
+========================================================
+
+You can go to: https://frostfall123.shinyapps.io/peer_graded_4/
+and start working with the app.
+
+The application was built using Shiny package (Highly recommend it) and the source code is in 2 files:
+- `ui.R`
+- `server.R`
+
+Both files can be found here: https://github.com/Ei5baer/Developing_data_products_peergraded4
